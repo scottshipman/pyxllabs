@@ -162,7 +162,9 @@ a:hover {
   Header Styling
 ================================================== */
 #header {
-  background: #6d168c;
+ /* background: #6d168c; */
+  background: #2c2c2c;
+
   height: 70px;
 }
 
