@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
         else var str = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: "/contactform/contact.php",
+                url: "contactform/contact.php",
                 data: str,
                 success: function(msg){
                     if(ferror === false) {
