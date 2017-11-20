@@ -838,6 +838,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #23c2e1;
 }
 
+/* hide salutation as honeypot */
+.salutation {
+  display: none;
+}
+
 /* ==================================================
   Footer Styling
   ================================================== */

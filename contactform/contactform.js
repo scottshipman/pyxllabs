@@ -9,10 +9,8 @@ jQuery(document).ready(function($) {
         emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
         f.children('input').each(function(){ // run all inputs
-
             var i = $(this); // current input
             var rule = i.attr('data-rule');
-
             if( rule !== undefined ){
             var ierror=false; // error flag for current input
             var pos = rule.indexOf( ':', 0 );
@@ -45,7 +43,7 @@ jQuery(document).ready(function($) {
                 if( !exp.test(i.val()) ){ ferror=ierror=true; }
                 break;
             }
-                i.next('.validation').html( ( ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');
+            i.next('.validation').html( ( ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');
             }
         });
         f.children('textarea').each(function(){ // run all inputs
@@ -76,14 +74,13 @@ jQuery(document).ready(function($) {
             }
         });
         if( ferror ) return false; 
-        else var str = $(this).serialize();		
+        else var str = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: "contactform/contact.php",
+                url: "/contactform/contact.php",
                 data: str,
                 success: function(msg){
-                   // alert(msg);
-                    if(msg == 'OK') {
+                    if(ferror === false) {
                         $("#sendmessage").addClass("show");			
                         $("#errormessage").removeClass("show");	
                         $('.contactForm').find("input, textarea").val("");
