@@ -521,7 +521,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   Features Styling
   ================================================== */
 .features {
-  padding-bottom: 45px;
+  padding-bottom: 5px;
 }
 
 .features h2 {
@@ -568,8 +568,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* ==================================================
   Call-to-action Styling
   ================================================== */
-.cta {
+
+.cta1 {
+  background-color: #E04F00;
+}
+
+.cta2 {
   background-color: #358c16;
+}
+
+.cta {
+
   padding: 25px 0;
 }
 
