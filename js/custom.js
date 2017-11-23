@@ -116,4 +116,29 @@ $(document).ready(function() {
     return false;
   });
 
+// Modal functionality ------------------------
+// --------------------------------------------
+
+// When the user clicks on the button, open the modal
+    $(".btn-modal").click(function() {
+        // Get the modal and display
+        var modal = document.getElementById(this.dataset.modal);
+        modal.style.display = "block";
+        return false;
+    });
+
+// When the user clicks on <span> (x), close the modal
+    $(".close").click(function() {
+        modal = document.getElementById(this.dataset.modal);
+        modal.style.display = "none";
+    });
+
+// When the user clicks anywhere outside of the modal, close it
+    $(window).click(function(event) {
+         if (event.target.classList.contains("modal")) {
+             event.target.style.display = "none";
+         }
+    });
+
+
 });
