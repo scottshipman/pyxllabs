@@ -628,6 +628,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .portfolio-grid .row > div .card img {
   width: 100%;
+  max-height: 12em;
+  min-height: 12em;
 }
 
 .portfolio-grid .row > div .card .portfolio-over {
@@ -940,6 +942,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content img {
+  object-fit: cover;
+  height: 14em;
 }
 
 /* The Close Button */
