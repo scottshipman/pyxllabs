@@ -467,6 +467,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size:12px !important;
 }
 
+.ph-pad {
+  margin-right: 40px;
+}
+
 /* ==================================================
   Stats Styling
 ================================================== */
