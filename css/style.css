@@ -863,6 +863,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: none;
 }
 
+.contact-h3 {
+  color: #358c16;
+}
+
 /* ==================================================
   Footer Styling
   ================================================== */
