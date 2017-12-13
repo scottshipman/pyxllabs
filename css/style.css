@@ -462,6 +462,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+.m-social a{
+  margin-top: 0px !important;
+  font-size:12px !important;
+}
+
 /* ==================================================
   Stats Styling
 ================================================== */
@@ -917,6 +922,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #358c16;
 }
 
+.social-footer a{
+  color: #fff !important;
+  opacity: .6 !important;
+  padding-right: 1em;
+}
+.social-footer a:hover {
+  color: #358c16 !important;
+}
+
 /* ==================================================
   Portfolio Modals
   ================================================== */
@@ -1097,3 +1111,4 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-right: 30px;
   }
 }
+
